@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Plant Assistance Website</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#capture">Capture Image</a></li>
+      <li><a href="#dataset">Dataset</a></li>
+      <li><a href="#services">Services</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to our Plant Assistance Website!</h2>
+    <p>Explore the features related to plants and agriculture.</p>
+  </section>
+
+  <section id="capture">
+    <h2>Capture Image of Your Plant</h2>
+    <input type="file" accept="image/*" capture="camera" id="imageInput">
+    <img id="capturedImage" alt="Captured Plant" style="display: none;">
+    <button onclick="captureImage()">Capture</button>
+  </section>
+
+  <section id="dataset">
+    <h2>Plant Dataset</h2>
+    <p>Assistant Solution:</p>
+    <div id="assistantSolution"></div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li><a href="#dairy">Dairy Products</a></li>
+      <li><a href="#buy">Buy Products</a></li>
+      <li><a href="#openland">Open Land Cultivation</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Plant Assistance Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
